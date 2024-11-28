@@ -8,15 +8,6 @@ const hands = coloda.druft(shuffledColoda, playersCount)["hands"]
 const kozir = coloda.druft(shuffledColoda, playersCount)["kozir"]
 let ostatok_Cards = coloda.druft(shuffledColoda, playersCount)["newColoda"]
 
-const druft = () => {
-   console.log("\nКозырь:\n")
-   console.log(kozir)
-   console.log("\nОставшиеся карты:\n")
-   console.log(ostatok_Cards.length)
-}
-
-
-
 const findMinKozirPlayer = (hands) => {
    console.log("\nищу минимальную карту козыря у игроков...\n")
    let minWeight = 20000
@@ -47,7 +38,10 @@ const game = () => {
    console.log("Игроков: " + playersCount)
    console.log("Мешаю колоду...")
    console.log("Раздаю карты...")
-   druft()
+   console.log("\nКозырь:\n")
+   console.log(kozir)
+   console.log("\nОставшиеся карты:\n")
+   console.log(ostatok_Cards.length)
    let minKozir = findMinKozirPlayer(hands)
    console.log("Первым ходит игрок: " + minKozir)
    hands[minKozir-1].forEach(card => {
