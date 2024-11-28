@@ -4,6 +4,8 @@ const nominals = ["6", "7", "8", "9", "10", "Valet", "Dama", "Korol", "Tuz"]
 
 const weights = [6, 7, 8, 9, 10, 11, 12, 13, 14]
 
+const player = 0
+
 
 const getColoda = () => {
     let coloda = []
