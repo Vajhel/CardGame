@@ -20,6 +20,3 @@ const druft = (hands) => {
 }
 
 druft(hands)
-
-
-
